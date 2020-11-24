@@ -1,0 +1,352 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Open+Sans+Condensed:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+input {
+    vertical-align: middle;
+    border: none;
+}
+
+textarea {
+    border: none;
+}
+
+body {
+    font-family: 'Nanum Gothic', 'Open Sans Condensed';
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+    background: #000;
+    margin: 0 auto;
+}
+
+
+#all_box {width: 100%; height: 100%; background: rgba(0,0,0,0.8); position: fixed; left: 0; top: 0; z-index: 9999999;}
+
+
+#all_box .all_inner {width: 1200px; margin:  200px auto; text-align: center; 
+}
+
+
+#all_box .all_gnb > li {float: left; width: calc(30%); margin: 0 20px; margin-bottom: 30px;}
+
+
+#all_box .all_gnb > li > a {display: block; border-bottom: 1px solid rgba(255,255,255,0.5); color: #fff; font-size: 50px; text-align: center; padding: 20px 0 ; margin-bottom: 20px; font-family: 'tvN 즐거운이야기 Light';}
+
+
+.all_dep2 a {display: block; color: rgba(255,255,255); padding: 5px 0; text-align: center; transition: color 0.5s; font-weight: bold;}
+
+
+.all_dep2 a:hover {color: #ff8661;}
+
+
+.close {position: absolute; right: 48.5%; top:65%; font-family: 'tvN 즐거운이야기 Light'; font-size: 50px; transition: 0.5s;}
+.close:hover {transform: scale(1.5);}
+
+.am {width: 1200px; margin: 0 auto;}
+.am .all_menu {transform: scale(1.2); display: inline-block; position: absolute; top: 51.5px; left:56%;}
+
+#info_bg > .am > .all_menu {position: absolute; left: 26%; top:38.5%;}
+
+
+#listen_bg {
+    width: 100%;
+    height: 968px;
+    background: url('../image/listen%20live/sub_listen_bg.jpg')no-repeat center top;
+    box-sizing: border-box;
+}
+
+#today_bg {
+    width: 100%;
+    height: 968px;
+}
+
+#song_bg {
+    width: 100%;
+    height: 1500px;
+    background: url('../image/today/sub_today_bg2.png')no-repeat center top;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#info_bg {
+    width: 100%;
+    height: 968px;
+    background: url('../image/info/info_bg_1.jpg')no-repeat center top;
+    padding-top: 200px;
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'tvN 즐거운이야기 Light'
+}
+
+#listen_bg .radio {
+    width: 1200px;
+    margin: 230px auto;
+    position: relative;
+}
+
+#listen_bg .radio .ac {
+    width: 350px;
+    position: absolute;
+    z-index: 999;
+    left: 230px;
+    transition: all ease 1s;
+}
+
+#listen_bg .radio .ac:hover {
+    transform: rotate(360deg);
+}
+
+#listen_bg .radio .radio_contents {
+    width: 470px;
+    height: 350px;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 430px;
+    top: 5px;
+    box-sizing: border-box;
+    padding: 50px 0px 50px 180px;
+}
+
+.radio_contents > h1 {
+    font-size: 60px;
+    line-height: 55px;
+    font-family: 'tvN 즐거운이야기 Light'
+}
+
+.radio_contents > h2 {
+    font-family: 'tvN 즐거운이야기 Light';
+    font-size: 35px;
+}
+
+.radio_contents .time {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.radio_contents ul li {
+    float: left;
+    margin-right: 10px;
+}
+
+.radio_contents ul li img {
+    transition: 0.3s;
+}
+
+.radio_contents ul li img:hover {
+    transform: translateY(-5px);
+}
+
+.radio_contents .rq_link {
+    margin-top: 10px;
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+    font-family: 'tvN 즐거운이야기 Regular';
+    font-size: 35px;
+    transition: 0.3s;
+}
+
+.radio_contents .rq_link:hover {
+    transform: scale(1.2);
+}
+
+.radio_contents .rq_link a:hover {
+    color: #ff8661;
+}
+
+
+#singer {
+    width: 1200px;
+    height: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#singer img {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    opacity: 0.7;
+    z-index: -1
+}
+
+#singer .singer_desc {
+    position: absolute;
+    right: 0;
+    top: 20%;
+    font-size: 20px;
+    text-shadow: 0 2px 3px #000;
+    text-align: left;
+    transition: 0.3s;
+}
+
+#singer .singer_desc h1 {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 50px;
+    font-family: 'tvN 즐거운이야기 Light';
+}
+
+#singer .singer_desc h1 span {
+    font-size: 90px;
+}
+
+#singer .singer_desc:hover {
+    transform: scale(1.2);
+}
+
+.song {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.song > img {
+    position: absolute;
+    left: 50%;
+    top: 400px;
+    margin-left: -225px;
+    filter: brightness(90%);
+    transition: all ease 1s;
+}
+
+.song > img:hover {
+    transform: rotate(360deg);
+}
+
+.song .song_desc {
+    font-size: 20px;
+    text-shadow: 0 2px 3px #000;
+    text-align: left;
+    transition: 0.3s;
+    position: absolute;
+    left: 17%;
+    top: 900px;
+}
+
+.song .song_desc:hover {
+    transform: scale(1.2);
+}
+
+.song .song_desc h1 {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 50px;
+    font-family: 'tvN 즐거운이야기 Light';
+    text-align: center;
+}
+
+.song .song_desc h1 span {
+    font-size: 90px;
+}
+
+.song .song_desc p {
+    text-align: center;
+}
+
+
+#info_bg .info_tb {
+    width: 100%;
+    height: 580px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.info_tb > .info_mg {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.info_mg > h1 {
+    font-family: 'tvN 즐거운이야기 Light';
+    font-size: 80px;
+    line-height: 55px;
+    display: inline-block;
+}
+
+.info_mg > .desc {
+    float: right;
+    margin-top: 50px;
+}
+
+.info_1 input,
+.info_2 input {
+    margin-left: 30px;
+    padding: 5px 35px;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0);
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+}
+
+.info_3 input {
+    margin-left: 30px;
+    padding: 5px 333px 5px 35px;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0);
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.info_4 textarea {
+    margin-left: 30px;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0);
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 35px;
+    font-size: 16px;
+}
+
+.desc .submit {
+    float: right;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 5px 35px;
+    font-size: 20px;
+    color: #fff;
+}
+
+footer .back img {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -44px;
+}
+
+footer .back .but_1:hover {
+    z-index: -999;
+}
